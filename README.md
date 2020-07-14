@@ -17,3 +17,27 @@ cursor is a control structure that allows us to control and manage rows data fro
 - Single responsibility - so having one task per file
 - Open-Closed Principle
 Software entities(Classes, modules, functions) should be open for extension, not modification.
+
+---
+
+# Project notes
+My project has been through a couple of iterations but has a lot of room for improvement
+
+Currently, it is comprised of three files
+- My Databasecnxn file imports pyodbc and creates a class to establish a connection with the database 
+- I can improve on this by storing the sensitive information in a secret file in my gitignore to prevent the details from being shared publicly 
+
+Next I have a file called queries
+- I used instantiation to link the methods in my Open connection class with the method in my queries class
+- I hard coded the SQL command, but in the future, I will try to implement user inputs to drive the SQL queries
+
+Finally i have a 'main' or run file
+- I used the pillar of abstraction here to hide some of the details from plain sight. I like the simplicity of this file and I will continue using this framework for future iterations of my project 
+
+
+
+
+
+
+
+
